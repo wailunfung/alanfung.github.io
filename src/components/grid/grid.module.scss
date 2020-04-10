@@ -192,4 +192,12 @@
     opacity: 1;
     color: #000;
   }
+  .portfolio-card {
+    .info {
+      bottom: 0;
+      .info-type {
+        bottom: 0;
+      }
+    }
+  }
 }
