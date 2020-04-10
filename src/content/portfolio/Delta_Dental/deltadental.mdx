@@ -1,0 +1,96 @@
+---
+company: "Delta Dental"
+featuredImage: "./featured-image.png"
+role: "Lead Visual Designer"
+type: "Product Design"
+intro: "Delta Dental, an insurance provider and network for dentists, needed a facelift for their insurance portal to visually align with their parent site." 
+---
+import { graphql } from "gatsby";
+
+export const query = graphql`
+  query {
+    dd1: file(relativePath: { eq: "Delta_Dental/dd-01.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    dd2: file(relativePath: { eq: "Delta_Dental/dd-02.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    dd3: file(relativePath: { eq: "Delta_Dental/dd-03.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    dd4: file(relativePath: { eq: "Delta_Dental/dd-04.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    dd5: file(relativePath: { eq: "Delta_Dental/dd-05.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    dd6: file(relativePath: { eq: "Delta_Dental/dd-06.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    dd7: file(relativePath: { eq: "Delta_Dental/dd-07.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    dd8: file(relativePath: { eq: "Delta_Dental/dd-08.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    dd9: file(relativePath: { eq: "Delta_Dental/dd-09.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
+
+<GridTwo>
+
+<ImageContainer classes="large" fluid={props.data.dd1.childImageSharp.fluid} />
+<ImageContainer classes="small" fluid={props.data.dd2.childImageSharp.fluid} />
+<ImageContainer classes="small" fluid={props.data.dd3.childImageSharp.fluid} />
+<ImageContainer classes="small right" fluid={props.data.dd5.childImageSharp.fluid} />
+
+<p class="small space-me right blog-text">The design was inspired from the words fresh and clean. The imagery had to keep that same consistent feeling while injecting a bit of fun with the icons. <br />
+<button class="page-button"><a href="https://ddcalifornia.invisionapp.com/share/GXS83JIR6NT#/screens">Check out the Styleguide</a></button></p>
+
+<ImageContainer classes="large" fluid={props.data.dd4.childImageSharp.fluid} />
+<ImageContainer classes="small" fluid={props.data.dd6.childImageSharp.fluid} />
+<ImageContainer classes="small" fluid={props.data.dd7.childImageSharp.fluid} />
+<ImageContainer classes="small right" fluid={props.data.dd8.childImageSharp.fluid} />
+<ImageContainer classes="large" fluid={props.data.dd9.childImageSharp.fluid} />
+
+<p class="small right blog-text">Please contact me if you'd like to learn more about this project.</p>
+
+</GridTwo>

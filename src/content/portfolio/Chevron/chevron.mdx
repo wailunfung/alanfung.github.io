@@ -1,0 +1,28 @@
+---
+company: "Chevron"
+featuredImage: "./featured-image.png"
+role: "Senior Visual Designer"
+type: "Pitch Work"
+intro: "The Chevron website is home to a wealth of media, investor information and press releases. For this pitch work I wanted to serve that data up in a more fresh way. I drew inspiration from Think with Google, The Verge and similiar content heavy sites." 
+---
+import { graphql } from "gatsby";
+
+export const query = graphql`
+  query {
+    chevron1: file(relativePath: { eq: "Chevron/chevron-rfp-01.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
+
+<GridTwo>
+
+<ImageContainer classes="large" fluid={props.data.chevron1.childImageSharp.fluid} />
+
+<p class="small right blog-text">Please contact me if you'd like to learn more about this project.</p>
+
+</GridTwo>
