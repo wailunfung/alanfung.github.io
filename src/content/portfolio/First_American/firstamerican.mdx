@@ -86,6 +86,13 @@ export const query = graphql`
         }
       }
     }
+    fa12: file(relativePath: { eq: "First_American/fa-12.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
 
@@ -94,6 +101,7 @@ export const query = graphql`
 <ImageContainer classes="large" fluid={props.data.fa1.childImageSharp.fluid} />
 <ImageContainer classes="small right" fluid={props.data.fa2.childImageSharp.fluid} />
 <ImageContainer classes="large" fluid={props.data.fa3.childImageSharp.fluid} />
+<ImageContainer classes="small right" fluid={props.data.fa12.childImageSharp.fluid} />
 <ImageContainer classes="small" fluid={props.data.fa8.childImageSharp.fluid} />
 <ImageContainer classes="small" fluid={props.data.fa9.childImageSharp.fluid} />
 

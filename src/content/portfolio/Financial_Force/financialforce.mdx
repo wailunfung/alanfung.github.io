@@ -23,13 +23,21 @@ export const query = graphql`
         }
       }
     }
+    finforce3: file(relativePath: { eq: "Financial_Force/ff-03.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
 
 <GridTwo>
 
 <ImageContainer classes="large" fluid={props.data.finforce1.childImageSharp.fluid} />
-<ImageContainer classes="small right" fluid={props.data.finforce2.childImageSharp.fluid} />
+<ImageContainer classes="large" fluid={props.data.finforce2.childImageSharp.fluid} />
+<ImageContainer classes="small right" fluid={props.data.finforce3.childImageSharp.fluid} />
 
 <p class="small right blog-text">Please contact me if you'd like to learn more about this project.</p>
 
