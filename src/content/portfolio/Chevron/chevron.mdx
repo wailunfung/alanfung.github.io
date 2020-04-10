@@ -16,12 +16,21 @@ export const query = graphql`
         }
       }
     }
+    chevron2: file(relativePath: { eq: "Chevron/chevron-rfp-02.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
 
 <GridTwo>
 
 <ImageContainer classes="large" fluid={props.data.chevron1.childImageSharp.fluid} />
+
+<ImageContainer classes="small right" fluid={props.data.chevron2.childImageSharp.fluid} />
 
 <p class="small right blog-text">Please contact me if you'd like to learn more about this project.</p>
 

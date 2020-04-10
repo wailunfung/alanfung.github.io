@@ -72,6 +72,20 @@ export const query = graphql`
         }
       }
     }
+    dd10: file(relativePath: { eq: "Delta_Dental/dd-10.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    dd11: file(relativePath: { eq: "Delta_Dental/dd-11.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
 
@@ -86,10 +100,12 @@ export const query = graphql`
 <button class="page-button"><a href="https://ddcalifornia.invisionapp.com/share/GXS83JIR6NT#/screens">Check out the Styleguide</a></button></p>
 
 <ImageContainer classes="large" fluid={props.data.dd4.childImageSharp.fluid} />
-<ImageContainer classes="small" fluid={props.data.dd6.childImageSharp.fluid} />
+<ImageContainer classes="small" fluid={props.data.dd10.childImageSharp.fluid} />
+<ImageContainer classes="small left" fluid={props.data.dd6.childImageSharp.fluid} />
 <ImageContainer classes="small" fluid={props.data.dd7.childImageSharp.fluid} />
 <ImageContainer classes="small right" fluid={props.data.dd8.childImageSharp.fluid} />
-<ImageContainer classes="large" fluid={props.data.dd9.childImageSharp.fluid} />
+<ImageContainer classes="small" fluid={props.data.dd9.childImageSharp.fluid} />
+<ImageContainer classes="small" fluid={props.data.dd11.childImageSharp.fluid} />
 
 <p class="small right blog-text">Please contact me if you'd like to learn more about this project.</p>
 
