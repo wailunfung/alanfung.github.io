@@ -72,6 +72,27 @@ export const query = graphql`
         }
       }
     }
+    ezev10: file(relativePath: { eq: "EZ_EV/ezev10.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    ezev11: file(relativePath: { eq: "EZ_EV/ezev11.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    ezev12: file(relativePath: { eq: "EZ_EV/ezev12.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
 
@@ -85,10 +106,12 @@ export const query = graphql`
 <p class="small space-me right blog-text">I love cars and getting to work on this project was a blessing. I drew upon all my automotive knowledge to really get these designs just right. I used MotorTrend, Import Tuner and other such magazines to really nail down the artwork.</p>
 
 <ImageContainer classes="large" fluid={props.data.ezev5.childImageSharp.fluid} />
+<ImageContainer classes="large" fluid={props.data.ezev10.childImageSharp.fluid} />
 <ImageContainer classes="small" fluid={props.data.ezev6.childImageSharp.fluid} />
 <ImageContainer classes="small" fluid={props.data.ezev7.childImageSharp.fluid} />
 <ImageContainer classes="small right" fluid={props.data.ezev8.childImageSharp.fluid} />
-<ImageContainer classes="large" fluid={props.data.ezev9.childImageSharp.fluid} />
+<ImageContainer classes="large" fluid={props.data.ezev11.childImageSharp.fluid} />
+<ImageContainer classes="small right" fluid={props.data.ezev12.childImageSharp.fluid} />
 
 <p class="small right blog-text">Please contact me if you'd like to learn more about this project.</p>
 
