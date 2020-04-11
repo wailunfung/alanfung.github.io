@@ -84,6 +84,24 @@ export const PortfolioCard = props => {
   )
 }
 
+export const BlogCard = props => {
+  return (
+    <div className={gridStyles.blogCard}>
+    <Link className={gridStyles.cardLink} to={props.link}>
+      <div className={gridStyles.cardWrapper}>
+        <div className={gridStyles.imageWrapper}>
+          <Img className={gridStyles.cardImage} sizes={props.image} alt={props.alt} />
+        </div>
+        <div className={gridStyles.info}>
+          <p className={gridStyles.infoDate}>{props.date}</p>
+          <h3 className={gridStyles.infoTitle}>{props.title}</h3>
+        </div>
+      </div>
+    </Link>
+  </div>
+  )
+}
+
 export const FeaturedSmall = props => {
   return (
     <div className={gridStyles.featuredSmall}>
@@ -104,20 +122,6 @@ export const FeaturedLarge = props => {
       <Img className={gridStyles.cardImage} sizes={props.image} alt={props.alt} />
       <div className={gridStyles.info}>
         <h3 className={gridStyles.infoCompany}>{props.title}</h3>
-      </div>
-    </Link>
-  </div>
-  )
-}
-
-export const BlogCard = props => {
-  return (
-    <div className={gridStyles.blogCard}>
-    <Link className={gridStyles.cardLink} to={props.link}>
-      <Img className={gridStyles.cardImage} sizes={props.image} alt={props.alt} />
-      <div className={gridStyles.info}>
-        <h3 className={gridStyles.infoTitle}>{props.title}</h3>
-        <p className={gridStyles.infoDate}>{props.date}</p>
       </div>
     </Link>
   </div>

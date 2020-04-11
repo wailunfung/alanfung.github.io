@@ -28,5 +28,11 @@
   width: 30%;
   height: 1px;
   background: #FFF;
-  margin: 15px 0 20px;
+  margin: 25px 0 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .text-block {
+    margin: 30px 0;
+  }
 }

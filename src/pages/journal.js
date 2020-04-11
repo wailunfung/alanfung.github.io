@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import LightLayout from "../components/layout/LightLayout";
 import SEO from "../components/seo";
-import { PWL, GridAuto, PortfolioCard } from "../components/grid/grid";
+import { PWL, GridAuto, BlogCard } from "../components/grid/grid";
 
 const JournalPage = ({ data }) => {
   const { edges: posts } = data.allMdx
@@ -14,11 +14,11 @@ const JournalPage = ({ data }) => {
         <GridAuto>
           {posts.map(({ node: post }) => (
             <article key={post.id}>
-            <PortfolioCard
+            <BlogCard
               link={`journal/${post.fields.slug}`}
               image={post.frontmatter.featuredImage.childImageSharp.fluid}
-              company={post.frontmatter.title}
-              type={post.frontmatter.date}
+              title={post.frontmatter.title}
+              date={post.frontmatter.date}
             />
             </article>
           ))}
