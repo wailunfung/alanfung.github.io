@@ -114,6 +114,13 @@ export const query = graphql`
         }
       }
     }
+    galls16: file(relativePath: { eq: "Galls/galls-16.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
 
@@ -125,30 +132,30 @@ export const query = graphql`
 
 <p class="small space-me right blog-text">For the new design - we went with Industry Inc. The font portrays strength and sturdiness with its shape and symbolizes the courage of the men and women in the public safety industry that serve and protect us on a daily basis.</p>
 
-<ImageContainer classes="small" fluid={props.data.galls3.childImageSharp.fluid} />
+<ImageContainer classes="large" fluid={props.data.galls3.childImageSharp.fluid} />
 
-<ImageContainer classes="small" fluid={props.data.galls4.childImageSharp.fluid} />
+<ImageContainer classes="small right" fluid={props.data.galls4.childImageSharp.fluid} />
 
-<ImageContainer classes="small" fluid={props.data.galls5.childImageSharp.fluid} />
+<ImageContainer classes="small right" fluid={props.data.galls5.childImageSharp.fluid} />
 
-<ImageContainer classes="small left" fluid={props.data.galls6.childImageSharp.fluid} />
+<ImageContainer classes="small right" fluid={props.data.galls6.childImageSharp.fluid} />
 
-<ImageContainer classes="small left" fluid={props.data.galls7.childImageSharp.fluid} />
+<ImageContainer classes="small right" fluid={props.data.galls7.childImageSharp.fluid} />
 
-<ImageContainer classes="small" fluid={props.data.galls8.childImageSharp.fluid} />
+<ImageContainer classes="small right" fluid={props.data.galls8.childImageSharp.fluid} />
 
-<p class="small space-me right blog-text">For the mobile menu, I opted for the standard accordian design because of the number of options inside the menu.</p>
-
-<ImageContainer classes="small" fluid={props.data.galls9.childImageSharp.fluid} />
-<ImageContainer classes="small" fluid={props.data.galls10.childImageSharp.fluid} />
+<ImageContainer classes="large" fluid={props.data.galls9.childImageSharp.fluid} />
+<ImageContainer classes="small right" fluid={props.data.galls10.childImageSharp.fluid} />
 
 <p class="small space-me right blog-text">The product cards were designed to be versitle and scalable. From desktop to mobile, the focus is kept on the product with the most important information remaining at each breakpoint. The compare component displays a modal on the same page so that users won't be navigated away from their current browsing search or filter.</p>
 
-<ImageContainer classes="large" fluid={props.data.galls11.childImageSharp.fluid} />
-<ImageContainer classes="small" fluid={props.data.galls12.childImageSharp.fluid} />
-<ImageContainer classes="small" fluid={props.data.galls13.childImageSharp.fluid} />
+<ImageContainer classes="small" fluid={props.data.galls11.childImageSharp.fluid} />
+<ImageContainer classes="small" fluid={props.data.galls16.childImageSharp.fluid} />
+<ImageContainer classes="small right" fluid={props.data.galls12.childImageSharp.fluid} />
+<ImageContainer classes="small right" fluid={props.data.galls13.childImageSharp.fluid} />
 <ImageContainer classes="small right" fluid={props.data.galls14.childImageSharp.fluid} />
 <ImageContainer classes="small right" fluid={props.data.galls15.childImageSharp.fluid} />
+
 
 <p class="small right blog-text">Please contact me if you'd like to learn more about this project.</p>
 
