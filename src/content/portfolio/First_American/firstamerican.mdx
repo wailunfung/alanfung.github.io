@@ -6,6 +6,8 @@ type: "Product Design"
 intro: "First American, a financial services company and provider of home insurance needed to create a responsive web application for their contractors and customers" 
 ---
 import { graphql } from "gatsby";
+import fa05 from "./fa-05.gif";
+import fa13 from "./fa-13.gif";
 
 export const query = graphql`
   query {
@@ -31,13 +33,6 @@ export const query = graphql`
       }
     }
     fa4: file(relativePath: { eq: "First_American/fa-04.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    fa5: file(relativePath: { eq: "First_American/fa-05.png" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
@@ -93,6 +88,13 @@ export const query = graphql`
         }
       }
     }
+    fa14: file(relativePath: { eq: "First_American/fa-14.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
 
@@ -111,7 +113,8 @@ export const query = graphql`
 
 <p class="small space-me right blog-text">The appointment view allows contractors to quickly communicate with customers and update the status of their job/work order. The design utilizes a dynamic side panel to pull in content based on the contractors choices. The flow below demonstrates 2 paths a contractor might take while in the field.</p>
 
-<ImageContainer classes="large" fluid={props.data.fa5.childImageSharp.fluid} />
+<img class="small" src={fa05} />
+<img class="small" src={fa13} />
 
 <p class="small space-me right blog-text">The left path allows the contractor to update their arrival status or reschedule an appointment if needed. The right path illustrates a completed work order path or if there is an issue and the contractor needs another contractor with a specialized skillset.</p>
 
@@ -119,7 +122,9 @@ export const query = graphql`
 
 <p class="small space-me right blog-text">The Work Orders section of the site utilizes the same dynamic side panels.</p>
 
-<ImageContainer classes="large" fluid={props.data.fa7.childImageSharp.fluid} />
+<ImageContainer classes="small" fluid={props.data.fa7.childImageSharp.fluid} />
+
+<ImageContainer classes="small" fluid={props.data.fa14.childImageSharp.fluid} />
 
 <p class="small space-me right blog-text">The invoicing section utilizes the dynamic form fields, using dynamic content allows us to serve the user better without having to load extra content that may or may not be used.<br /><button class="page-button"><a href="https://herodigital.invisionapp.com/share/PQP60ESCYME#/screens">Check out the Prototype</a></button></p>
 
