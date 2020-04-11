@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby"
+import { graphql } from "gatsby";
 import Img from "gatsby-image";
 
 import DarkLayout from "../components/layout/DarkLayout";
@@ -28,7 +28,7 @@ export const query = graphql`
     contact: file(relativePath: { eq: "contact.png" }) {
       childImageSharp {
         fluid(maxWidth: 1600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

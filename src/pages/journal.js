@@ -16,7 +16,7 @@ const JournalPage = ({ data }) => {
             <article key={post.id}>
             <PortfolioCard
               link={`journal/${post.fields.slug}`}
-              image={post.frontmatter.featuredImage.childImageSharp.sizes}
+              image={post.frontmatter.featuredImage.childImageSharp.fluid}
               company={post.frontmatter.title}
               type={post.frontmatter.date}
             />
@@ -48,8 +48,8 @@ export const pageQuery = graphql`
             title
             featuredImage {
               childImageSharp {
-                sizes(maxWidth: 1600) {
-                  ...GatsbyImageSharpSizes
+                fluid(maxWidth: 1600) {
+                  ...GatsbyImageSharpFluid_withWebp
                 }
               }
             }

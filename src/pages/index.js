@@ -5,34 +5,35 @@ import SEO from "../components/seo";
 
 import { PWD, GridGallery, FeaturedSmall, FeaturedLarge, GridFour } from "../components/grid/grid";
 import indexStyles from "./pages.module.scss"
+
 const IndexPage = (props) => {
   return (
     <DarkLayout>
       <SEO title="Home" />
       <PWD>
-        <h4>Featured Projects</h4>
+        <h4 className={indexStyles.darkHeader}>Featured Projects</h4>
         <GridGallery>
           <FeaturedSmall 
             link={`portfolio/ezev`}
-            image={props.data.featured2.childImageSharp.sizes}
+            image={props.data.featured2.childImageSharp.fluid}
             title="EZ EV"
           />
 
           <FeaturedSmall 
             link={`portfolio/firstamerican`}
-            image={props.data.featured3.childImageSharp.sizes}
+            image={props.data.featured3.childImageSharp.fluid}
             title="First American"
           />
 
           <FeaturedLarge 
             link={`portfolio/deltadental`}
-            image={props.data.featured1.childImageSharp.sizes}
+            image={props.data.featured1.childImageSharp.fluid}
             title="Delta Dental"
           />
 
           <FeaturedSmall
             link={`portfolio/galls`}
-            image={props.data.featured4.childImageSharp.sizes}
+            image={props.data.featured4.childImageSharp.fluid}
             title="Galls"
           />
 
@@ -42,7 +43,7 @@ const IndexPage = (props) => {
           <div />
           <div />
           <div className={indexStyles.textBlock}>
-            <h4>Random Codepens</h4>
+            <h4 className={indexStyles.darkHeader}>Random Codepens</h4>
             <div className={indexStyles.bar} />
             <ul>
               <li><a href="https://codepen.io/wailun/pen/EJEqoQ" target="_blank" rel="noopener noreferrer">Experimental Navigation &#8599;</a></li>
@@ -52,7 +53,7 @@ const IndexPage = (props) => {
           </div>
 
           <div className={indexStyles.textBlock}>
-            <h4>Current Projects</h4>
+            <h4 className={indexStyles.darkHeader}>Current Projects</h4>
             <div className={indexStyles.bar} />
             <ul>
               <li>Available for freelance</li>
@@ -74,29 +75,29 @@ export const query = graphql`
   query {
     featured1: file(relativePath: { eq: "featured1.png" }) {
       childImageSharp {
-        sizes(maxWidth: 1600) {
-          ...GatsbyImageSharpSizes
+        fluid(maxWidth: 1600) {
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     featured2: file(relativePath: { eq: "featured2.png" }) {
       childImageSharp {
-        sizes(maxWidth: 1600) {
-          ...GatsbyImageSharpSizes
+        fluid(maxWidth: 1600) {
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     featured3: file(relativePath: { eq: "featured3.png" }) {
       childImageSharp {
-        sizes(maxWidth: 1600) {
-          ...GatsbyImageSharpSizes
+        fluid(maxWidth: 1600) {
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     featured4: file(relativePath: { eq: "featured4.png" }) {
       childImageSharp {
-        sizes(maxWidth: 1600) {
-          ...GatsbyImageSharpSizes
+        fluid(maxWidth: 1600) {
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

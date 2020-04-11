@@ -12,21 +12,21 @@ export const query = graphql`
     finforce1: file(relativePath: { eq: "Financial_Force/ff-01.png" }) {
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     finforce2: file(relativePath: { eq: "Financial_Force/ff-02.png" }) {
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     finforce3: file(relativePath: { eq: "Financial_Force/ff-03.png" }) {
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

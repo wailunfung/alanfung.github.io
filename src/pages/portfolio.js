@@ -2,7 +2,9 @@ import React from "react";
 import { graphql } from "gatsby";
 import DarkLayout from "../components/layout/DarkLayout";
 import SEO from "../components/seo";
-import { PWD, GridAuto, PortfolioCard } from "../components/grid/grid";  
+import { PWD, GridAuto, PortfolioCard } from "../components/grid/grid";
+
+import portfolioStyles from "./pages.module.scss";
 
 const PortfolioPage = ({ data }) => {
   const { edges: portfolios } = data.allMdx
@@ -10,13 +12,13 @@ const PortfolioPage = ({ data }) => {
     <DarkLayout>
       <SEO title="Portfolio" />
       <PWD>
-        <h4>All Portfolio Work</h4>
+        <h4 className={portfolioStyles.darkHeader}>All Portfolio Work</h4>
         <GridAuto>
           {portfolios.map(({ node: portfolio }) => (
             <article key={portfolio.id}>
             <PortfolioCard
               link={`portfolio/${portfolio.fields.slug}`}
-              image={portfolio.frontmatter.featuredImage.childImageSharp.sizes}
+              image={portfolio.frontmatter.featuredImage.childImageSharp.fluid}
               company={portfolio.frontmatter.company}
               type={portfolio.frontmatter.type}
             />
@@ -49,8 +51,8 @@ export const pageQuery = graphql`
             type
             featuredImage {
               childImageSharp {
-                sizes(maxWidth: 1600) {
-                  ...GatsbyImageSharpSizes
+                fluid(maxWidth: 1600) {
+                  ...GatsbyImageSharpFluid_withWebp
                 }
               }
             }

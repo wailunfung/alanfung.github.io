@@ -12,7 +12,7 @@ export const query = graphql`
     hm1: file(relativePath: { eq: "Houston_Methodist/hm-01.png"}) {
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
