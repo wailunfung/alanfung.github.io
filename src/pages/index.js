@@ -55,7 +55,8 @@ const IndexPage = (props) => {
             <h4>Current Projects</h4>
             <div className={indexStyles.bar} />
             <ul>
-              <li></li>
+              <li>Available for freelance</li>
+              <li>Adding blog support to portfolio</li>
             </ul>
           </div>
 
