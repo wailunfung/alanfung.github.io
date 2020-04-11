@@ -59,6 +59,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-163309460-1"
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Alan Fung | Portfolio`,
