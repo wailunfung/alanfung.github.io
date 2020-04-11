@@ -1,0 +1,28 @@
+.text-block {
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+  h4 {
+    margin: 0;
+  }
+  a {
+    color: #FFF;
+    text-decoration: none;
+    transition: color 0.35s ease-out;
+    &:hover {
+      color: #daa520;
+    }
+  }
+}
+
+.spacer {
+  margin: 300px;
+}
+
+.bar {
+  width: 30%;
+  height: 1px;
+  background: #FFF;
+  margin: 15px 0 20px;
+}

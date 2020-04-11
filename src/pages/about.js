@@ -15,7 +15,7 @@ const AboutPage = (props) => {
       <PWD>
         <GridTwo>
           <div className="small about-block">
-            <h4>About Me.</h4>
+            <h4>About Me</h4>
             <p>Hello! I'm Alan, a designer based in San Francisco. My capabilities include art direction, design systems, UX research, motion design and front end development.</p>
             <p>I'm passionate about integrating technology with real world applications to better enrich and serve our lives.</p>
             <p>When I'm not designing, I'm ripping down mountains on my snowboard, making a mess in the kitchen and taking photos with my camera.</p>

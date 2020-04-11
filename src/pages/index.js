@@ -3,8 +3,8 @@ import { graphql } from "gatsby";
 import DarkLayout from "../components/layout/DarkLayout";
 import SEO from "../components/seo";
 
-import { PWD, GridGallery, FeaturedSmall, FeaturedLarge } from "../components/grid/grid";
-
+import { PWD, GridGallery, FeaturedSmall, FeaturedLarge, GridFour } from "../components/grid/grid";
+import indexStyles from "./pages.module.scss"
 const IndexPage = (props) => {
   return (
     <DarkLayout>
@@ -35,13 +35,32 @@ const IndexPage = (props) => {
             image={props.data.featured4.childImageSharp.sizes}
             title="Galls"
           />
-{/* 
-          <FeaturedSmall
-            link={`portfolio/404`}
-            image={props.data.featured5.childImageSharp.sizes}
-            title="lorem ipsum"
-          /> */}
+
         </GridGallery>
+        <div className={indexStyles.spacer} />
+        <GridFour>
+          <div />
+          <div />
+          <div className={indexStyles.textBlock}>
+            <h4>Random Codepens</h4>
+            <div className={indexStyles.bar} />
+            <ul>
+              <li><a href="https://codepen.io/wailun/pen/EJEqoQ" target="_blank" rel="noopener noreferrer">Experimental Navigation &#8599;</a></li>
+              <li><a href="https://codepen.io/wailun/pen/WVKxvz" target="_blank" rel="noopener noreferrer">CSS Pageloader Animation &#8599;</a></li>
+              <li><a href="https://codepen.io/wailun/pen/pOaWqZ" target="_blank" rel="noopener noreferrer">Product Slider &#8599;</a></li>
+            </ul>
+          </div>
+
+          <div className={indexStyles.textBlock}>
+            <h4>Current Projects</h4>
+            <div className={indexStyles.bar} />
+            <ul>
+              <li></li>
+            </ul>
+          </div>
+
+        </GridFour>
+        <div className={indexStyles.spacer} />
 
       </PWD>
     </DarkLayout>
