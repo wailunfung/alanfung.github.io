@@ -5,6 +5,7 @@ module.exports = {
     title: `Full Stack Designer`,
     description: `This is the portfolio of Alan Fung`,
     author: `Alan Fung`,
+    image: `https://alanfung.design/about4.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
