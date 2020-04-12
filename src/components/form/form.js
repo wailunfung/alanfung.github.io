@@ -6,7 +6,7 @@ const Form = () => {
   return (
     <div className={formStyles.formContainer}>
       <h3 className={formStyles.formHeader}>Let's work together and change the world,<br />one pixel at a time.</h3>
-      <form method="post" action="mailto:wailunfung@gmail.com" target="_blank">
+      <form method="GET" action="mailto:wailunfung@gmail.com" target="_blank">
         <div className={formStyles.inputGroup}>
           <input className={formStyles.inputStyle} type="text" placeholder="NAME" name="name" id="name" />
         </div>

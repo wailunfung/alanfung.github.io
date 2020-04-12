@@ -20,6 +20,14 @@ export const PWL = (props) => {
   )
 }
 
+export const BlogWrapper = (props) => {
+  return (
+    <div className={gridStyles.blogWrapper}>
+      {props.children}
+    </div>
+  )
+}
+
 export const GridTwo = (props) => {
   return (
     <div className={gridStyles.gridContainer}>

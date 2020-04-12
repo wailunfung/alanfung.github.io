@@ -8,6 +8,11 @@
   color: #000;
 }
 
+.blog-wrapper {
+  max-width: 900px;
+  margin: auto;
+}
+
 .grid-two-column {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -38,6 +43,16 @@
 .grid-wall {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.grid-blog {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: 1fr;
+  grid-gap: 4rem;
+  height: 100vh;
+  grid-template-areas: 
+    "nav content side";
 }
 
 .portfolio-card {
@@ -103,14 +118,15 @@
   width: 100%;
   overflow: hidden;
   border-radius: 8px;
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
-  -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
-  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0);
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0);
   transition: all .35s ease;
   &:hover {
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0);
-    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0);
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+    transform: scale(1.02);
   }
   .card-wrapper {
     display: flex;
@@ -120,6 +136,7 @@
     height: 200px;
     background-color: #FFF;
     padding: 30px;
+    transition: all 1s ease;
     .info-date {
       color: #666;
       font-size: calc(12px  + (12 - 12) * ((100vw - 300px) / (1600 - 300)));
@@ -130,6 +147,7 @@
     }
     .info-title {
       color: #333;
+      font-size: calc(16px  + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
     }
   }
   .card-link {

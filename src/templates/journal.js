@@ -3,14 +3,14 @@ import { Link } from "gatsby";
 import { MDXProvider } from "@mdx-js/react";
 
 import LightLayout from "../components/layout/LightLayout";
-import { PWL, GridTwo } from "../components/grid/grid";
-import PostHeader from "../components/posts/intro";
+import { PWL, BlogWrapper } from "../components/grid/grid";
+import { BlogHeader } from "../components/posts/intro";
 import SEO from "../components/seo";
 
 import templateStyles from "./template.module.scss";
 import "../styles/pages.scss";
 
-const shortcodes = { GridTwo } // Provide common components here
+const shortcodes = {  } // Provide common components here
 
 const JournalPage = ({ pageContext, children }) => {
   const { prev, next } = pageContext
@@ -18,14 +18,16 @@ const JournalPage = ({ pageContext, children }) => {
     <LightLayout>
       <SEO title="Journal" />
       <PWL>
-        <PostHeader
-          company={pageContext.frontmatter.title}
-          type={pageContext.frontmatter.date}
-          intro={pageContext.frontmatter.intro}
-        />
-        <MDXProvider components={shortcodes}>
-          {children}
-        </MDXProvider>
+        <BlogWrapper>
+          <BlogHeader
+            company={pageContext.frontmatter.title}
+            type={pageContext.frontmatter.date}
+            intro={pageContext.frontmatter.intro}
+          />
+          <MDXProvider components={shortcodes}>
+            {children}
+          </MDXProvider>
+        </BlogWrapper>
         <footer className={templateStyles.footer}>
           <div className={templateStyles.footerWrapper}>
             <div className={templateStyles.footerLeft}>

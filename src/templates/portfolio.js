@@ -4,7 +4,7 @@ import { MDXProvider } from "@mdx-js/react";
 
 import DarkLayout from "../components/layout/DarkLayout";
 import { PWD, GridTwo, ImageContainer } from "../components/grid/grid";
-import PostHeader from "../components/posts/intro";
+import { PortfolioHeader } from "../components/posts/intro";
 import SEO from "../components/seo";
 
 import templateStyles from "./template.module.scss";
@@ -18,7 +18,7 @@ const ProjectPage = ({ pageContext, children }) => {
     <DarkLayout>
       <SEO title="Portfolio" />
       <PWD>
-        <PostHeader 
+        <PortfolioHeader 
           company={pageContext.frontmatter.company}
           role={pageContext.frontmatter.role}
           type={pageContext.frontmatter.type}
