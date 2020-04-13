@@ -5,7 +5,7 @@ import { MDXProvider } from "@mdx-js/react";
 import DarkLayout from "../components/layout/DarkLayout";
 import { PWD, GridTwo, ImageContainer } from "../components/grid/grid";
 import { PortfolioHeader } from "../components/posts/intro";
-import SEO from "../components/seo";
+import SEO from "../components/seo/seo";
 
 import templateStyles from "./template.module.scss";
 import "../styles/pages.scss";

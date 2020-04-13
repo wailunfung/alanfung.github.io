@@ -5,7 +5,7 @@ import { MDXProvider } from "@mdx-js/react";
 import LightLayout from "../components/layout/LightLayout";
 import { PWL, BlogWrapper } from "../components/grid/grid";
 import { BlogHeader } from "../components/posts/intro";
-import SEO from "../components/seo";
+import SEO from "../components/seo/seo";
 
 import templateStyles from "./template.module.scss";
 import "../styles/pages.scss";

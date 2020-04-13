@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import DarkLayout from "../components/layout/DarkLayout";
-import SEO from "../components/seo";
+import SEO from "../components/seo/seo";
 
 import { PWD, GridGallery, FeaturedSmall, FeaturedLarge, GridFour } from "../components/grid/grid";
 import indexStyles from "./pages.module.scss"

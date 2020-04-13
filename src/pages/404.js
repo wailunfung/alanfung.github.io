@@ -1,7 +1,7 @@
 import React from "react";
 
 import DarkLayout from "../components/layout/DarkLayout";
-import SEO from "../components/seo";
+import SEO from "../components/seo/seo";
 import Video from "../components/videoplayer/video";
 import { PWD } from "../components/grid/grid";
 

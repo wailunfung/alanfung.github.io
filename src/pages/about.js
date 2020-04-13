@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import Img from "gatsby-image";
 
 import DarkLayout from "../components/layout/DarkLayout";
-import SEO from "../components/seo";
+import SEO from "../components/seo/seo";
 import { PWD, GridTwo } from "../components/grid/grid";
 
 import aboutStyles from "./pages.module.scss";

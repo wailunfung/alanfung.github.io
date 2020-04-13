@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import ScrollLocker from "../scrolllocker";
+import ScrollLocker from "../scrolllocker/scrolllocker";
 import navStyles from "./nav.module.scss";
 
 

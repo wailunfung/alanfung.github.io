@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import LightLayout from "../components/layout/LightLayout";
-import SEO from "../components/seo";
+import SEO from "../components/seo/seo";
 import { PWL, GridFour, BlogCard } from "../components/grid/grid";
 
 const JournalPage = ({ data }) => {
