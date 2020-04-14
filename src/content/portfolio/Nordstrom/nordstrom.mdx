@@ -1,0 +1,94 @@
+---
+company: "Nordstrom"
+featuredImage: "./featured-image.png"
+role: "Lead Visual Designer"
+type: "Product Design"
+intro: "The Metadata Reconciliation Tool or MrT helps the Nordstrom teams tag images and cross reference them so they can be used as a set of recommended products for Nordstrom online shoppers." 
+---
+import { graphql } from "gatsby";
+
+export const query = graphql`
+  query {
+    nordstrom: file(relativePath: { eq: "Nordstrom/featured-image.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    nordstrom1: file(relativePath: { eq: "Nordstrom/nordstrom-01.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    nordstrom2: file(relativePath: { eq: "Nordstrom/nordstrom-02.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    nordstrom3: file(relativePath: { eq: "Nordstrom/nordstrom-03.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    nordstrom4: file(relativePath: { eq: "Nordstrom/nordstrom-04.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    nordstrom5: file(relativePath: { eq: "Nordstrom/nordstrom-05.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    nordstrom6: file(relativePath: { eq: "Nordstrom/nordstrom-06.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    nordstrom7: file(relativePath: { eq: "Nordstrom/nordstrom-07.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`
+
+<GridTwo>
+
+<ImageContainer classes="large" fluid={props.data.nordstrom1.childImageSharp.fluid} />
+
+<ImageContainer classes="small" fluid={props.data.nordstrom.childImageSharp.fluid} />
+
+<ImageContainer classes="small" fluid={props.data.nordstrom2.childImageSharp.fluid} />
+
+<ImageContainer classes="small right" fluid={props.data.nordstrom3.childImageSharp.fluid} />
+
+<p class="small right blog-text">The dashboard shows the latest photoshoots uploaded to the Nordstrom system. The platform is powered by Adobe's AEM solution, housing hundreds of thousands of assets. The metadata tool takes tags and places the images in the correct product pages - minimizing production times and automating most of the process.</p>
+
+<ImageContainer classes="large" fluid={props.data.nordstrom4.childImageSharp.fluid} />
+
+<ImageContainer classes="small right" fluid={props.data.nordstrom5.childImageSharp.fluid} />
+
+<p class="small right blog-text">The job view shows all photo assets related to the photoshoot or job. The number of images per shoot varies from shoot to shoot, the user interface was designed with that in mind. Multi-selection allows the user to quickly tag data. In the above image - when a user selects the 2 outfits. Every piece of clothing associated with that outfit is displayed. From there - selecting the featured product checkbox can update the product page carousel.</p>
+
+<ImageContainer classes="large" fluid={props.data.nordstrom6.childImageSharp.fluid} />
+<ImageContainer classes="large" fluid={props.data.nordstrom7.childImageSharp.fluid} />
+
+<p class="small right blog-text">Please contact me if you'd like to learn more about this project.</p>
+
+</GridTwo>
