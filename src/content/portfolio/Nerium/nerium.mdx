@@ -1,0 +1,109 @@
+---
+company: "Nerium"
+featuredImage: "./featured-image.png"
+role: "Senior Visual Designer"
+type: "Product Design"
+intro: "Website and brand refresh for Nerium, a multi-level marketing skincare brand. The refresh included restructured user flows, a" 
+---
+import { graphql } from "gatsby";
+
+export const query = graphql`
+  query {
+    nerium1: file(relativePath: { eq: "Nerium/nerium-01.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    nerium2: file(relativePath: { eq: "Nerium/nerium-02.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    nerium3: file(relativePath: { eq: "Nerium/nerium-03.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    nerium4: file(relativePath: { eq: "Nerium/nerium-04.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    nerium5: file(relativePath: { eq: "Nerium/nerium-05.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    nerium6: file(relativePath: { eq: "Nerium/nerium-06.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    nerium7: file(relativePath: { eq: "Nerium/nerium-07.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    nerium8: file(relativePath: { eq: "Nerium/nerium-08.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    nerium9: file(relativePath: { eq: "Nerium/nerium-09.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    nerium10: file(relativePath: { eq: "Nerium/nerium-10.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`
+
+<GridTwo>
+
+<ImageContainer classes="large" fluid={props.data.nerium1.childImageSharp.fluid} />
+
+<ImageContainer classes="small" fluid={props.data.nerium2.childImageSharp.fluid} />
+
+<ImageContainer classes="small" fluid={props.data.nerium3.childImageSharp.fluid} />
+
+<ImageContainer classes="large" fluid={props.data.nerium4.childImageSharp.fluid} />
+
+<ImageContainer classes="small right" fluid={props.data.nerium5.childImageSharp.fluid} />
+
+<ImageContainer classes="small" fluid={props.data.nerium6.childImageSharp.fluid} />
+
+<ImageContainer classes="small" fluid={props.data.nerium7.childImageSharp.fluid} />
+
+<ImageContainer classes="small right" fluid={props.data.nerium8.childImageSharp.fluid} />
+
+<ImageContainer classes="small right" fluid={props.data.nerium9.childImageSharp.fluid} />
+
+<ImageContainer classes="large" fluid={props.data.nerium10.childImageSharp.fluid} />
+
+<p class="small right blog-text">Please contact me if you'd like to learn more about this project.</p>
+
+</GridTwo>

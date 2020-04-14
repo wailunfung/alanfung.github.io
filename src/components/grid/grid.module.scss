@@ -45,16 +45,6 @@
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-.grid-blog {
-  display: grid;
-  grid-template-columns: 200px 1fr 200px;
-  grid-template-rows: 1fr;
-  grid-gap: 4rem;
-  height: 100vh;
-  grid-template-areas: 
-    "nav content side";
-}
-
 .portfolio-card {
   width: 100%;
   height: auto;

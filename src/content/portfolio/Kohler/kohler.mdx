@@ -1,0 +1,46 @@
+---
+company: "Kohler"
+featuredImage: "./featured-image.png"
+role: "Lead Visual Designer"
+type: "Pitch Work"
+intro: "Kohler, a name synonymous with high-end plumbing products, wanted to modernize their website and user experience. This is the resulting work from that RFP." 
+---
+import { graphql } from "gatsby";
+
+export const query = graphql`
+  query {
+    kohler1: file(relativePath: { eq: "Kohler/kohler-01.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    kohler2: file(relativePath: { eq: "Kohler/kohler-02.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    kohler3: file(relativePath: { eq: "Kohler/kohler-03.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`
+
+<GridTwo>
+
+<ImageContainer classes="large" fluid={props.data.kohler1.childImageSharp.fluid} />
+
+<ImageContainer classes="small right" fluid={props.data.kohler2.childImageSharp.fluid} />
+
+<ImageContainer classes="large" fluid={props.data.kohler3.childImageSharp.fluid} />
+
+<p class="small right blog-text">Please contact me if you'd like to learn more about this project.</p>
+
+</GridTwo>
