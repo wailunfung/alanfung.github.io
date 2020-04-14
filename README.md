@@ -1,6 +1,7 @@
 # alanfung.design
 This is the source code for alanfung.design
 * Gatsby site using the default starter
+* Checkout the full documentation and tutorials at [gatsbyjs.org](https://www.gatsbyjs.org/)
 
 ## Development Instructions
 This repo is deployed from the master-source branch to the master branch.
