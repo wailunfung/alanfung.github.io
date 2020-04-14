@@ -79,6 +79,27 @@ export const query = graphql`
         }
       }
     }
+    nerium11: file(relativePath: { eq: "Nerium/nerium-11.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    nerium12: file(relativePath: { eq: "Nerium/nerium-12.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    nerium13: file(relativePath: { eq: "Nerium/nerium-13.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
   }
 `
 
@@ -92,17 +113,25 @@ export const query = graphql`
 
 <ImageContainer classes="large" fluid={props.data.nerium4.childImageSharp.fluid} />
 
+<p class="small right blog-text">Please contact me if you'd like to learn more about this project.</p>
+
 <ImageContainer classes="small right" fluid={props.data.nerium5.childImageSharp.fluid} />
 
 <ImageContainer classes="small" fluid={props.data.nerium6.childImageSharp.fluid} />
 
 <ImageContainer classes="small" fluid={props.data.nerium7.childImageSharp.fluid} />
 
+<ImageContainer classes="small right" fluid={props.data.nerium12.childImageSharp.fluid} />
+
 <ImageContainer classes="small right" fluid={props.data.nerium8.childImageSharp.fluid} />
 
 <ImageContainer classes="small right" fluid={props.data.nerium9.childImageSharp.fluid} />
 
 <ImageContainer classes="large" fluid={props.data.nerium10.childImageSharp.fluid} />
+
+<ImageContainer classes="small right" fluid={props.data.nerium11.childImageSharp.fluid} />
+
+<ImageContainer classes="small right" fluid={props.data.nerium13.childImageSharp.fluid} />
 
 <p class="small right blog-text">Please contact me if you'd like to learn more about this project.</p>
 
