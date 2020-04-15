@@ -38,9 +38,9 @@ const IndexPage = (props) => {
           />
 
           <FeaturedSmall
-            link={`portfolio/nerium`}
+            link={`portfolio/sva`}
             image={props.data.featured5.childImageSharp.fluid}
-            title="Nerium"
+            title="SVA"
           />
         </GridGallery>
         <div className={indexStyles.spacer} />
