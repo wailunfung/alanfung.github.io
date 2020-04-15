@@ -79,35 +79,35 @@ export const query = graphql`
   query {
     featured1: file(relativePath: { eq: "featured1.png" }) {
       childImageSharp {
-        fluid(maxWidth: 1600) {
+        fluid {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     featured2: file(relativePath: { eq: "featured2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 1600) {
+        fluid {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     featured3: file(relativePath: { eq: "featured3.png" }) {
       childImageSharp {
-        fluid(maxWidth: 1600) {
+        fluid {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     featured4: file(relativePath: { eq: "featured4.png" }) {
       childImageSharp {
-        fluid(maxWidth: 1600) {
+        fluid {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     featured5: file(relativePath: { eq: "featured5.png" }) {
       childImageSharp {
-        fluid(maxWidth: 1600) {
+        fluid {
           ...GatsbyImageSharpFluid_withWebp
         }
       }

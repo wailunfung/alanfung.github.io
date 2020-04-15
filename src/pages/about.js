@@ -37,28 +37,28 @@ export const query = graphql`
   query {
     about1: file(relativePath: { eq: "about1.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1600) {
+        fluid {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     about2: file(relativePath: { eq: "about2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 1600) {
+        fluid {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     about3: file(relativePath: { eq: "about3.png" }) {
       childImageSharp {
-        fluid(maxWidth: 1600) {
+        fluid {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     about4: file(relativePath: { eq: "about4.png" }) {
       childImageSharp {
-        fluid(maxWidth: 1600) {
+        fluid {
           ...GatsbyImageSharpFluid_withWebp
         }
       }

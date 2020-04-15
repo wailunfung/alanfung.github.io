@@ -1,0 +1,95 @@
+---
+company: "Sephora Virtual Artist"
+featuredImage: "./featured-image.png"
+role: "Senior Visual Designer"
+type: "Product Design"
+intro: "Sephora Virtual Artist is a complete eCommerce experience - integrating augmented reality and face tracking for users to test makeup on their face. For this project I translated the web app into a native iOS and Android app." 
+---
+import { graphql } from "gatsby";
+
+export const query = graphql`
+  query {
+    sva1: file(relativePath: { eq: "SVA/sva-01.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    sva2: file(relativePath: { eq: "SVA/sva-02.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    sva3: file(relativePath: { eq: "SVA/sva-03.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    sva4: file(relativePath: { eq: "SVA/sva-04.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    sva5: file(relativePath: { eq: "SVA/sva-05.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    sva6: file(relativePath: { eq: "SVA/sva-06.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    sva7: file(relativePath: { eq: "SVA/sva-07.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    sva8: file(relativePath: { eq: "SVA/sva-08.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`
+
+<GridTwo>
+
+<ImageContainer classes="large" fluid={props.data.sva1.childImageSharp.fluid} />
+
+<ImageContainer classes="small" fluid={props.data.sva2.childImageSharp.fluid} />
+
+<ImageContainer classes="small" fluid={props.data.sva3.childImageSharp.fluid} />
+
+<p class="small right blog-text">The default view for Product Try-On gives users a clean interface to interact with different color swatches. The swatches place the selected makeup color and style on the user with face tracking technology and augemented reality.</p>
+
+<ImageContainer classes="small" fluid={props.data.sva4.childImageSharp.fluid} />
+
+<ImageContainer classes="small" fluid={props.data.sva5.childImageSharp.fluid} />
+
+<p class="small right blog-text">As the app evolved and new features were added, our team had to rethink how the customers would interact with the app. Instead of redesigning the UI to get everything to fit, we decided to introduce nested navigational elements. In the above comps, selecting eye shadow allows the user to have more functionality over the placement of the makeup. Color Swatches were then nested inside of Color Palettes. The reasoning for this was to match the actual product sold by Sephora.</p>
+
+<ImageContainer classes="small right" fluid={props.data.sva6.childImageSharp.fluid} />
+
+<ImageContainer classes="small right" fluid={props.data.sva7.childImageSharp.fluid} />
+
+<ImageContainer classes="small right" fluid={props.data.sva8.childImageSharp.fluid} />
+
+<p class="small right blog-text">Please contact me if you'd like to learn more about this project.</p>
+
+</GridTwo>
