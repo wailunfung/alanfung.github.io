@@ -65,6 +65,48 @@ export const query = graphql`
         }
       }
     }
+    sva9: file(relativePath: { eq: "SVA/sva-09.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    sva10: file(relativePath: { eq: "SVA/sva-10.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    sva11: file(relativePath: { eq: "SVA/sva-11.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    sva12: file(relativePath: { eq: "SVA/sva-12.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    sva13: file(relativePath: { eq: "SVA/sva-13.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    sva14: file(relativePath: { eq: "SVA/sva-14.png"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
   }
 `
 
@@ -89,6 +131,24 @@ export const query = graphql`
 <ImageContainer classes="small right" fluid={props.data.sva7.childImageSharp.fluid} />
 
 <ImageContainer classes="small right" fluid={props.data.sva8.childImageSharp.fluid} />
+
+<p class="small right blog-text">As customers navigate through the app and try on makeup products - they have the ability to add it to their cart. Once added the integrated on screen cart is quickly accessible from the drop down bar located under the main navigation.</p>
+
+<ImageContainer classes="large" fluid={props.data.sva9.childImageSharp.fluid} />
+
+<p class="small right blog-text">The app is made up of three sections - the above section is the "try and buy" eCommerce portion of the app and the remaining two sections make up the thought leadership sections. The first of these two sections is called Looks. This section houses makeup combinations or Looks for a variety of events. The content is created by Sephora In-Store Beauty Specialists.</p>
+
+<ImageContainer classes="small right" fluid={props.data.sva10.childImageSharp.fluid} />
+
+<ImageContainer classes="small right" fluid={props.data.sva11.childImageSharp.fluid} />
+
+<p class="small right blog-text">The last section of the app cements Sephora's brand as a trusted leader in its industry through tutorials from professional makeup artists.</p>
+
+<ImageContainer classes="small" fluid={props.data.sva12.childImageSharp.fluid} />
+
+<ImageContainer classes="small" fluid={props.data.sva13.childImageSharp.fluid} />
+
+<ImageContainer classes="small right" fluid={props.data.sva14.childImageSharp.fluid} />
 
 <p class="small right blog-text">Please contact me if you'd like to learn more about this project.</p>
 
