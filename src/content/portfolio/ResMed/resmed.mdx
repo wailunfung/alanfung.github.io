@@ -1,0 +1,108 @@
+---
+company: "Res Med"
+featuredImage: "./featured-image.png"
+role: "Lead Visual Designer"
+type: "Product Design"
+intro: "ResMed a medical equipment company specializing in CPAP machines needed a brand refresh. The designs incorporate thought leadershipship and build trust with their customers as a leader in the sleep apnea research field."
+---
+import { graphql } from "gatsby";
+import resmed1 from "./resmed-01.gif";
+import RMTEST from "./resmed-02.png";
+
+export const query = graphql`
+  query {
+    resmed2: file(relativePath: { eq: "ResMed/resmed-02.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    resmed3: file(relativePath: { eq: "ResMed/resmed-03.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    resmed4: file(relativePath: { eq: "ResMed/resmed-04.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    resmed5: file(relativePath: { eq: "ResMed/resmed-05.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    resmed6: file(relativePath: { eq: "ResMed/resmed-06.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    resmed7: file(relativePath: { eq: "ResMed/resmed-07.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    resmed8: file(relativePath: { eq: "ResMed/resmed-08.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    resmed9: file(relativePath: { eq: "ResMed/resmed-09.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    resmed10: file(relativePath: { eq: "ResMed/resmed-10.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`
+
+<GridTwo>
+
+<ImageContainer classes="large" fluid={props.data.resmed2.childImageSharp.fluid} />
+
+<ImageContainer classes="small" fluid={props.data.resmed4.childImageSharp.fluid} />
+
+<ImageContainer classes="small" fluid={props.data.resmed3.childImageSharp.fluid} />
+
+<div class="small right"><img src={resmed1} alt="Prototype Animation" /></div>
+
+<p class="small right blog-text">This prototype illustrates the scrolling animation concept for the homepage.</p>
+
+<ImageContainer classes="small right" fluid={props.data.resmed5.childImageSharp.fluid} />
+
+<ImageContainer classes="small right" fluid={props.data.resmed6.childImageSharp.fluid} />
+
+<ImageContainer classes="small" fluid={props.data.resmed7.childImageSharp.fluid} />
+
+<ImageContainer classes="small" fluid={props.data.resmed8.childImageSharp.fluid} />
+
+<ImageContainer classes="small right" fluid={props.data.resmed9.childImageSharp.fluid} />
+
+<p class="small right blog-text">For the product page I went with an illustrative and typographic approach. The idea here was to educate the user on sleep apnea and also prove that ResMed is a leader in their respected field.</p>
+
+<ImageContainer classes="large" fluid={props.data.resmed10.childImageSharp.fluid} />
+
+<p class="small right blog-text">Please contact me if you'd like to learn more about this project.</p>
+
+</GridTwo>

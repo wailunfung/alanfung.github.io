@@ -93,6 +93,20 @@ export const query = graphql`
         }
       }
     }
+    ezev13: file(relativePath: { eq: "EZ_EV/ezev13.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    ezev14: file(relativePath: { eq: "EZ_EV/ezev14.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
   }
 `
 
@@ -100,11 +114,11 @@ export const query = graphql`
 
 <ImageContainer classes="large" fluid={props.data.ezev1.childImageSharp.fluid} />
 
-<ImageContainer classes="small left" fluid={props.data.ezev2.childImageSharp.fluid} />
-
-<ImageContainer classes="small left" fluid={props.data.ezev3.childImageSharp.fluid} />
+<ImageContainer classes="small" fluid={props.data.ezev3.childImageSharp.fluid} />
 
 <ImageContainer classes="small" fluid={props.data.ezev4.childImageSharp.fluid} />
+
+<ImageContainer classes="small right" fluid={props.data.ezev2.childImageSharp.fluid} />
 
 <p class="small space-me right blog-text">I love cars and getting to work on this project was a blessing. I drew upon all my automotive knowledge to really get these designs just right. I used MotorTrend, Import Tuner and other such magazines to really nail down the artwork.</p>
 
@@ -118,9 +132,15 @@ export const query = graphql`
 
 <ImageContainer classes="small right" fluid={props.data.ezev8.childImageSharp.fluid} />
 
+<p class="small space-me right blog-text">The category pages utilize a scalable card size featuring a prominent available discount price to drive engagement.</p>
+
+<ImageContainer classes="small" fluid={props.data.ezev13.childImageSharp.fluid} />
+
+<ImageContainer classes="small" fluid={props.data.ezev14.childImageSharp.fluid} />
+
 <ImageContainer classes="large" fluid={props.data.ezev11.childImageSharp.fluid} />
 
-<ImageContainer classes="small right" fluid={props.data.ezev12.childImageSharp.fluid} />
+<ImageContainer classes="large" fluid={props.data.ezev12.childImageSharp.fluid} />
 
 <p class="small right blog-text">Please contact me if you'd like to learn more about this project.</p>
 
