@@ -42,6 +42,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             frontmatter {
               title
               company
+              featuredImage {
+                publicURL
+              }
             }
           }
         }
@@ -60,10 +63,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   portfolioEdge.forEach(({node}, index ) => {
     createPage({
       path: `/portfolio/${node.fields.slug}`,
-      // component: path.resolve(`./src/templates/portfolio.js`),
       component: node.fileAbsolutePath,
       context: {
         id: node.id,
+        image: node.frontmatter.featuredImage.publicURL,
         prev: index === 0 ? null : portfolioEdge[index - 1].node,
         next: index === (portfolioEdge.length - 1) ? null : portfolioEdge[index + 1].node
       },
@@ -73,7 +76,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   journalEdge.forEach(({node}, index ) => {
     createPage({
       path: `/journal/${node.fields.slug}`,
-      // component: path.resolve(`./src/templates/journal.js`),
       component: node.fileAbsolutePath,
       context: {
         id: node.id,

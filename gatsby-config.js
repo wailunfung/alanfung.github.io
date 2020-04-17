@@ -1,12 +1,15 @@
 const path = require('path');
+const siteMetadata = {
+  title: `Full Stack Designer`,
+  description: `Portfolio and Blog for Alan Fung`,
+  image:`/default-site-image.jpg`,
+  siteUrl:`https://alanfung.design`,
+  twitterUsername:`@wailunfung`,
+  authorName:`Alan Fung`,
+};
 
 module.exports = {
-  siteMetadata: {
-    title: `Full Stack Designer`,
-    description: `This is the portfolio of Alan Fung`,
-    author: `Alan Fung`,
-    image: `https://alanfung.design/about4.png`,
-  },
+  siteMetadata: siteMetadata,
   plugins: [
     `gatsby-plugin-react-helmet`,
     {

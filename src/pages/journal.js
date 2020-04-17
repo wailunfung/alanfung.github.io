@@ -10,7 +10,7 @@ const JournalPage = ({ data }) => {
     <LightLayout>
       <SEO title="Journal" />
       <PWL>
-        <h4>Journal Entries</h4>
+        <h4>Random rants, ridiculous recipes, relaxing radiomixes</h4>
         <GridFour>
           {posts.map(({ node: post }) => (
             <article key={post.id}>
