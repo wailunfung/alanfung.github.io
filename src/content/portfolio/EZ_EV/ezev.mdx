@@ -11,84 +11,84 @@ export const query = graphql`
   query {
     ezev1: file(relativePath: { eq: "EZ_EV/ezev1.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     ezev2: file(relativePath: { eq: "EZ_EV/ezev2.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     ezev3: file(relativePath: { eq: "EZ_EV/ezev3.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     ezev4: file(relativePath: { eq: "EZ_EV/ezev4.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     ezev5: file(relativePath: { eq: "EZ_EV/ezev5.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     ezev6: file(relativePath: { eq: "EZ_EV/ezev6.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     ezev7: file(relativePath: { eq: "EZ_EV/ezev7.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     ezev8: file(relativePath: { eq: "EZ_EV/ezev8.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     ezev9: file(relativePath: { eq: "EZ_EV/ezev9.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     ezev10: file(relativePath: { eq: "EZ_EV/ezev10.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     ezev11: file(relativePath: { eq: "EZ_EV/ezev11.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     ezev12: file(relativePath: { eq: "EZ_EV/ezev12.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
@@ -99,18 +99,27 @@ export const query = graphql`
 <GridTwo>
 
 <ImageContainer classes="large" fluid={props.data.ezev1.childImageSharp.fluid} />
+
 <ImageContainer classes="small left" fluid={props.data.ezev2.childImageSharp.fluid} />
+
 <ImageContainer classes="small left" fluid={props.data.ezev3.childImageSharp.fluid} />
+
 <ImageContainer classes="small" fluid={props.data.ezev4.childImageSharp.fluid} />
 
 <p class="small space-me right blog-text">I love cars and getting to work on this project was a blessing. I drew upon all my automotive knowledge to really get these designs just right. I used MotorTrend, Import Tuner and other such magazines to really nail down the artwork.</p>
 
 <ImageContainer classes="large" fluid={props.data.ezev5.childImageSharp.fluid} />
+
 <ImageContainer classes="small" fluid={props.data.ezev10.childImageSharp.fluid} />
+
 <ImageContainer classes="small left" fluid={props.data.ezev6.childImageSharp.fluid} />
+
 <ImageContainer classes="small" fluid={props.data.ezev7.childImageSharp.fluid} />
+
 <ImageContainer classes="small right" fluid={props.data.ezev8.childImageSharp.fluid} />
+
 <ImageContainer classes="large" fluid={props.data.ezev11.childImageSharp.fluid} />
+
 <ImageContainer classes="small right" fluid={props.data.ezev12.childImageSharp.fluid} />
 
 <p class="small right blog-text">Please contact me if you'd like to learn more about this project.</p>

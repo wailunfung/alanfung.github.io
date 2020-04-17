@@ -11,7 +11,7 @@ export const query = graphql`
   query {
     gigamon1: file(relativePath: { eq: "Gigamon/gigamon-01.png"}) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }

@@ -13,84 +13,84 @@ export const query = graphql`
   query {
     fa1: file(relativePath: { eq: "First_American/fa-01.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     fa2: file(relativePath: { eq: "First_American/fa-02.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     fa3: file(relativePath: { eq: "First_American/fa-03.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     fa4: file(relativePath: { eq: "First_American/fa-04.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     fa6: file(relativePath: { eq: "First_American/fa-06.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     fa7: file(relativePath: { eq: "First_American/fa-07.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     fa8: file(relativePath: { eq: "First_American/fa-08.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     fa9: file(relativePath: { eq: "First_American/fa-09.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     fa10: file(relativePath: { eq: "First_American/fa-10.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     fa11: file(relativePath: { eq: "First_American/fa-11.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     fa12: file(relativePath: { eq: "First_American/fa-12.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     fa14: file(relativePath: { eq: "First_American/fa-14.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
@@ -101,10 +101,15 @@ export const query = graphql`
 <GridTwo>
 
 <ImageContainer classes="large" fluid={props.data.fa1.childImageSharp.fluid} />
+
 <ImageContainer classes="small right" fluid={props.data.fa2.childImageSharp.fluid} />
+
 <ImageContainer classes="large" fluid={props.data.fa3.childImageSharp.fluid} />
+
 <ImageContainer classes="small right" fluid={props.data.fa12.childImageSharp.fluid} />
+
 <ImageContainer classes="small" fluid={props.data.fa8.childImageSharp.fluid} />
+
 <ImageContainer classes="small" fluid={props.data.fa9.childImageSharp.fluid} />
 
 <p class="small space-me right blog-text">The dashboard houses a lot of logic for the contractors. The design allows them to navigate quickly to different parts of the portal - from accepting new contracts to filing invoices, the idea was to help keep contractors focused in the field and less on their devices.</p>
@@ -113,8 +118,9 @@ export const query = graphql`
 
 <p class="small space-me right blog-text">The appointment view allows contractors to quickly communicate with customers and update the status of their job/work order. The design utilizes a dynamic side panel to pull in content based on the contractors choices. The flow below demonstrates 2 paths a contractor might take while in the field.</p>
 
-<img class="small" src={fa05} />
-<img class="small" src={fa13} />
+<div class="small"><img src={fa05} alt="Reschedule Appointment" /></div>
+
+<div class="small"><img src={fa13} alt="Appointment Outcome" /></div>
 
 <p class="small space-me right blog-text">The left path demonstrates a contractor updating their appointment. The right path illustrates an issue and the contractor needs another contractor with a specialized skillset.</p>
 

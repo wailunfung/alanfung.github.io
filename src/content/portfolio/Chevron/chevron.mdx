@@ -11,14 +11,14 @@ export const query = graphql`
   query {
     chevron1: file(relativePath: { eq: "Chevron/chevron-rfp-01.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     chevron2: file(relativePath: { eq: "Chevron/chevron-rfp-02.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }

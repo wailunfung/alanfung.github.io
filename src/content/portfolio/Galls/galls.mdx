@@ -11,112 +11,112 @@ export const query = graphql`
   query {
     galls1: file(relativePath: { eq: "Galls/galls-01.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     galls2: file(relativePath: { eq: "Galls/galls-02.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     galls3: file(relativePath: { eq: "Galls/galls-03.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     galls4: file(relativePath: { eq: "Galls/galls-04.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     galls5: file(relativePath: { eq: "Galls/galls-05.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     galls6: file(relativePath: { eq: "Galls/galls-06.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     galls7: file(relativePath: { eq: "Galls/galls-07.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     galls8: file(relativePath: { eq: "Galls/galls-08.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     galls9: file(relativePath: { eq: "Galls/galls-09.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     galls10: file(relativePath: { eq: "Galls/galls-10.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     galls11: file(relativePath: { eq: "Galls/galls-11.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     galls12: file(relativePath: { eq: "Galls/galls-12.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     galls13: file(relativePath: { eq: "Galls/galls-13.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     galls14: file(relativePath: { eq: "Galls/galls-14.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     galls15: file(relativePath: { eq: "Galls/galls-15.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     galls16: file(relativePath: { eq: "Galls/galls-16.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
@@ -145,17 +145,22 @@ export const query = graphql`
 <ImageContainer classes="small right" fluid={props.data.galls8.childImageSharp.fluid} />
 
 <ImageContainer classes="large" fluid={props.data.galls9.childImageSharp.fluid} />
+
 <ImageContainer classes="small right" fluid={props.data.galls10.childImageSharp.fluid} />
 
 <p class="small space-me right blog-text">The product cards were designed to be versitle and scalable. From desktop to mobile, the focus is kept on the product with the most important information remaining at each breakpoint. The compare component displays a modal on the same page so that users won't be navigated away from their current browsing search or filter.</p>
 
 <ImageContainer classes="small" fluid={props.data.galls11.childImageSharp.fluid} />
-<ImageContainer classes="small" fluid={props.data.galls16.childImageSharp.fluid} />
-<ImageContainer classes="small right" fluid={props.data.galls12.childImageSharp.fluid} />
-<ImageContainer classes="small right" fluid={props.data.galls13.childImageSharp.fluid} />
-<ImageContainer classes="small right" fluid={props.data.galls14.childImageSharp.fluid} />
-<ImageContainer classes="small right" fluid={props.data.galls15.childImageSharp.fluid} />
 
+<ImageContainer classes="small" fluid={props.data.galls16.childImageSharp.fluid} />
+
+<ImageContainer classes="small right" fluid={props.data.galls12.childImageSharp.fluid} />
+
+<ImageContainer classes="small right" fluid={props.data.galls13.childImageSharp.fluid} />
+
+<ImageContainer classes="small right" fluid={props.data.galls14.childImageSharp.fluid} />
+
+<ImageContainer classes="small right" fluid={props.data.galls15.childImageSharp.fluid} />
 
 <p class="small right blog-text">Please contact me if you'd like to learn more about this project.</p>
 
