@@ -14,12 +14,12 @@ const shortcodes = { GridTwo, ImageContainer } // Provide common components here
 
 const ProjectPage = ({ pageContext, children }) => {
   const { prev, next } = pageContext
-  console.log(pageContext)
   return (
     <DarkLayout>
       <SEO 
         title={pageContext.frontmatter.company}
         image={pageContext.image}
+        description={pageContext.frontmatter.type}
       />
       <PWD>
         <PortfolioHeader 

@@ -22,10 +22,7 @@ function SEO({ description, lang, meta, image: metaImage, title, pathname }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const image =
-      metaImage && metaImage.src
-        ? `${site.siteMetadata.siteUrl}${metaImage.src}`
-        : null
+  const image = `${site.siteMetadata.siteUrl}${metaImage || site.siteMetadata.image}`
   const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
 
   return (
@@ -87,14 +84,6 @@ function SEO({ description, lang, meta, image: metaImage, title, pathname }) {
                   content: image,
                 },
                 {
-                  property: "og:image:width",
-                  content: metaImage.width,
-                },
-                {
-                  property: "og:image:height",
-                  content: metaImage.height,
-                },
-                {
                   name: "twitter:card",
                   content: "summary_large_image",
                 },
@@ -122,11 +111,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
-  image: PropTypes.shape({
-    src: PropTypes.string.isRequired,
-    height: PropTypes.number.isRequired,
-    width: PropTypes.number.isRequired,
-  }),
+  image: PropTypes.string,
   pathname: PropTypes.string,
 }
 

@@ -16,7 +16,10 @@ const JournalPage = ({ pageContext, children }) => {
   const { prev, next } = pageContext
   return (
     <LightLayout>
-      <SEO title="Journal" />
+      <SEO 
+        title={pageContext.frontmatter.title}
+        image={pageContext.image}
+      />
       <PWL>
         <BlogWrapper>
           <BlogHeader

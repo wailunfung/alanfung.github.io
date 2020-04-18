@@ -79,6 +79,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       component: node.fileAbsolutePath,
       context: {
         id: node.id,
+        image: node.frontmatter.featuredImage.publicURL,
         prev: index === 0 ? null : journalEdge[index - 1].node,
         next: index === (journalEdge.length - 1) ? null : journalEdge[index + 1].node
       },

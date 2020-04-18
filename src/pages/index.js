@@ -9,7 +9,9 @@ import indexStyles from "./pages.module.scss"
 const IndexPage = (props) => {
   return (
     <DarkLayout>
-      <SEO title="Portfolio of Alan Fung" />
+      <SEO
+        title="Portfolio of Alan Fung"
+      />
       <PWD>
         <h4 className={indexStyles.darkHeader}>Featured Projects</h4>
         <GridGallery>
