@@ -19,6 +19,7 @@ const JournalPage = ({ pageContext, children }) => {
       <SEO 
         title={pageContext.frontmatter.title}
         image={pageContext.image}
+        description={pageContext.frontmatter.intro}
       />
       <PWL>
         <BlogWrapper>

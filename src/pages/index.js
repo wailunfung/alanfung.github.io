@@ -10,7 +10,7 @@ const IndexPage = (props) => {
   return (
     <DarkLayout>
       <SEO
-        title="Portfolio of Alan Fung"
+        title="Full Stack Designer"
       />
       <PWD>
         <h4 className={indexStyles.darkHeader}>Featured Projects</h4>

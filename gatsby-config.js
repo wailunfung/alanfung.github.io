@@ -1,7 +1,7 @@
 const path = require('path');
 const siteMetadata = {
   title: `Full Stack Designer`,
-  description: `Portfolio and Blog for Alan Fung`,
+  description: `Pixel Pushing Desk Jockey`,
   image:`/default-site-image.jpg`,
   siteUrl:`https://alanfung.design`,
   twitterUsername:`@wailunfung`,

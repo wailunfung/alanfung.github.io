@@ -19,8 +19,7 @@ const ProjectPage = ({ pageContext, children }) => {
       <SEO 
         title={pageContext.frontmatter.company}
         image={pageContext.image}
-        description={pageContext.frontmatter.type}
-        pathname={pageContext.fileAbsolutePath}
+        description={pageContext.frontmatter.intro}
       />
       <PWD>
         <PortfolioHeader 
