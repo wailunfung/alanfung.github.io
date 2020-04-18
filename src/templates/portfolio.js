@@ -20,6 +20,7 @@ const ProjectPage = ({ pageContext, children }) => {
         title={pageContext.frontmatter.company}
         image={pageContext.image}
         description={pageContext.frontmatter.type}
+        pathname={pageContext.fileAbsolutePath}
       />
       <PWD>
         <PortfolioHeader 

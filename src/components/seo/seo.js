@@ -77,23 +77,16 @@ function SEO({ description, lang, meta, image: metaImage, title, pathname }) {
         },
       ]
         .concat(
-          metaImage
-            ? [
-                {
-                  property: "og:image",
-                  content: image,
-                },
-                {
-                  name: "twitter:card",
-                  content: "summary_large_image",
-                },
-              ]
-            : [
-                {
-                  name: "twitter:card",
-                  content: "summary",
-                },
-              ]
+                [
+                  {
+                    property: "og:image",
+                    content: image,
+                  },
+                  {
+                    name: "twitter:card",
+                    content: "summary_large_image",
+                  },
+                ]
         )
         .concat(meta)}
     />
