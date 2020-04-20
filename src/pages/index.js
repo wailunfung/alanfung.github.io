@@ -16,9 +16,9 @@ const IndexPage = (props) => {
         <h4 className={indexStyles.darkHeader}>Featured Projects</h4>
         <GridGallery>
           <FeaturedSmall
-            link={`portfolio/ezev`}
-            image={props.data.featured2.childImageSharp.fluid}
-            title="EZ EV"
+            link={`portfolio/deltadental`}
+            image={props.data.featured1.childImageSharp.fluid}
+            title="Delta Dental"
           />
 
           <FeaturedSmall
@@ -28,9 +28,9 @@ const IndexPage = (props) => {
           />
 
           <FeaturedLarge
-            link={`portfolio/deltadental`}
-            image={props.data.featured1.childImageSharp.fluid}
-            title="Delta Dental"
+            link={`portfolio/ezev`}
+            image={props.data.featured2.childImageSharp.fluid}
+            title="EZ EV"
           />
 
           <FeaturedSmall
