@@ -58,6 +58,27 @@ export const query = graphql`
         }
       }
     }
+    sony8: file(relativePath: { eq: "Sony/sony-08.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    sony9: file(relativePath: { eq: "Sony/sony-09.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    sony10: file(relativePath: { eq: "Sony/sony-10.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
   }
 `
 
@@ -75,9 +96,21 @@ export const query = graphql`
 
 <ImageContainer classes="small right" fluid={props.data.sony5.childImageSharp.fluid} />
 
-<ImageContainer classes="large" fluid={props.data.sony6.childImageSharp.fluid} />
+<p class="small right blog-text">The module system was extensive and included every imaginable variation.</p>
 
 <ImageContainer classes="small right" fluid={props.data.sony7.childImageSharp.fluid} />
+
+<ImageContainer classes="large" fluid={props.data.sony6.childImageSharp.fluid} />
+
+<p class="small right blog-text">One key aspect of the Sony design system was to support multi-screen browsing experiences. The challenge in this task was strategically designing system level flexibility into components and modules that could react to devices and screen sizes. It was just as important to support a viewing experience on touch devices as it was on the desktop.</p>
+
+<ImageContainer classes="small" fluid={props.data.sony8.childImageSharp.fluid} />
+
+<ImageContainer classes="small" fluid={props.data.sony9.childImageSharp.fluid} />
+
+<p class="small right blog-text">Design direction for Sony meant appealing to the cultures and needs of the entire globe. Our web product served 110 different countries and was translated into 30 languages. We strove for universal appeal with design, experience, and content while customizing per locale as required.</p>
+
+<ImageContainer classes="large" fluid={props.data.sony10.childImageSharp.fluid} />
 
 <p class="small right blog-text">Please contact me if you'd like to learn more about this project.</p>
 

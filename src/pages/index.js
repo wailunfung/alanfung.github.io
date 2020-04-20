@@ -44,6 +44,18 @@ const IndexPage = (props) => {
             image={props.data.featured5.childImageSharp.fluid}
             title="SVA"
           />
+
+          <FeaturedLarge
+            link={`portfolio/sony`}
+            image={props.data.featured6.childImageSharp.fluid}
+            title="Sony"
+          />
+
+          <FeaturedSmall
+            link={`portfolio/nerium`}
+            image={props.data.featured7.childImageSharp.fluid}
+            title="Nerium"
+          />
         </GridGallery>
         <div className={indexStyles.spacer} />
         <GridFour>
@@ -108,6 +120,20 @@ export const query = graphql`
       }
     }
     featured5: file(relativePath: { eq: "featured5.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    featured6: file(relativePath: { eq: "featured6.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    featured7: file(relativePath: { eq: "featured7.png" }) {
       childImageSharp {
         fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
