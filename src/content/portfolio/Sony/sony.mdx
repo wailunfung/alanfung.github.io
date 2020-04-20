@@ -1,0 +1,84 @@
+---
+company: "Sony"
+featuredImage: "./featured-image.png"
+role: "Web Designer"
+type: "Product Design"
+intro: "As part of Sony's Global Web Team our mission was to create a cohesive shopping experience for our customers by consolidating regional web properties in 110 countries and 30 languages into a single platform with a globally shared backend, CMS, and responsive design system." 
+---
+import { graphql } from "gatsby";
+
+export const query = graphql`
+  query {
+    sony1: file(relativePath: { eq: "Sony/sony-01.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    sony2: file(relativePath: { eq: "Sony/sony-02.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    sony3: file(relativePath: { eq: "Sony/sony-03.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    sony4: file(relativePath: { eq: "Sony/sony-04.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    sony5: file(relativePath: { eq: "Sony/sony-05.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    sony6: file(relativePath: { eq: "Sony/sony-06.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    sony7: file(relativePath: { eq: "Sony/sony-07.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`
+
+<GridTwo>
+
+<ImageContainer classes="large" fluid={props.data.sony1.childImageSharp.fluid} />
+
+<ImageContainer classes="small right" fluid={props.data.sony2.childImageSharp.fluid} />
+
+<p class="small right blog-text">The Sony Design System did not rely on rigid page templates. Instead, we created a flexible system of modules that could easily be rearranged and customized, per page. Our system consisted of a carefully designed library of interaction patterns and content layouts, that could seamlessly stack and rearrange on a page.</p>
+
+<ImageContainer classes="small" fluid={props.data.sony3.childImageSharp.fluid} />
+
+<ImageContainer classes="small" fluid={props.data.sony4.childImageSharp.fluid} />
+
+<ImageContainer classes="small right" fluid={props.data.sony5.childImageSharp.fluid} />
+
+<ImageContainer classes="large" fluid={props.data.sony6.childImageSharp.fluid} />
+
+<ImageContainer classes="small right" fluid={props.data.sony7.childImageSharp.fluid} />
+
+<p class="small right blog-text">Please contact me if you'd like to learn more about this project.</p>
+
+</GridTwo>

@@ -1,0 +1,46 @@
+---
+company: "SuperCell"
+featuredImage: "./featured-image.png"
+role: "Lead Visual Designer"
+type: "Product Design"
+intro: "SuperCell, makers of Clash Royale partnered with Next Generation E-Sports to host a tournament with over 300,000 players." 
+---
+import { graphql } from "gatsby";
+
+export const query = graphql`
+  query {
+    supercell1: file(relativePath: { eq: "SuperCell/supercell-01.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    supercell2: file(relativePath: { eq: "SuperCell/supercell-02.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    supercell3: file(relativePath: { eq: "SuperCell/supercell-03.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`
+
+<GridTwo>
+
+<ImageContainer classes="large" fluid={props.data.supercell1.childImageSharp.fluid} />
+
+<ImageContainer classes="large" fluid={props.data.supercell2.childImageSharp.fluid} />
+
+<ImageContainer classes="small right" fluid={props.data.supercell3.childImageSharp.fluid} />
+
+<p class="small right blog-text">Please contact me if you'd like to learn more about this project.</p>
+
+</GridTwo>
