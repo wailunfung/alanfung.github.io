@@ -28,9 +28,9 @@ const IndexPage = (props) => {
           />
 
           <FeaturedLarge
-            link={`portfolio/ezev`}
-            image={props.data.featured2.childImageSharp.fluid}
-            title="EZ EV"
+            link={`portfolio/tcolv`}
+            image={props.data.featured8.childImageSharp.fluid}
+            title="Cosmopolitan of LV"
           />
 
           <FeaturedSmall
@@ -40,9 +40,9 @@ const IndexPage = (props) => {
           />
 
           <FeaturedSmall
-            link={`portfolio/sva`}
-            image={props.data.featured5.childImageSharp.fluid}
-            title="SVA"
+            link={`portfolio/ezev`}
+            image={props.data.featured2.childImageSharp.fluid}
+            title="EZ EV"
           />
 
           <FeaturedLarge
@@ -55,6 +55,12 @@ const IndexPage = (props) => {
             link={`portfolio/nerium`}
             image={props.data.featured7.childImageSharp.fluid}
             title="Nerium"
+          />
+
+          <FeaturedSmall
+            link={`portfolio/sva`}
+            image={props.data.featured5.childImageSharp.fluid}
+            title="SVA"
           />
         </GridGallery>
         <div className={indexStyles.spacer} />
@@ -134,6 +140,13 @@ export const query = graphql`
       }
     }
     featured7: file(relativePath: { eq: "featured7.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    featured8: file(relativePath: { eq: "featured8.png" }) {
       childImageSharp {
         fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp

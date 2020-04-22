@@ -1,0 +1,86 @@
+---
+company: "The Cosmopolitan of LV"
+featuredImage: "./featured-image.png"
+role: "Lead Visual Designer"
+type: "Product Design"
+intro: "The Cosmoplitan of Las Vegas email journey included 16 different touchpoints with a customized AEM email manager automating the entire process. The designs utilized a modular design system - integrating with Adobe's Asset Manager, customers never receive the same email twice." 
+---
+import { graphql } from "gatsby";
+
+export const query = graphql`
+  query {
+    tcolv1: file(relativePath: { eq: "TCOLV/tcolv-01.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    tcolv2: file(relativePath: { eq: "TCOLV/tcolv-02.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    tcolv3: file(relativePath: { eq: "TCOLV/tcolv-03.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    tcolv4: file(relativePath: { eq: "TCOLV/tcolv-04.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    tcolv5: file(relativePath: { eq: "TCOLV/tcolv-05.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    tcolv6: file(relativePath: { eq: "TCOLV/tcolv-06.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    tcolv7: file(relativePath: { eq: "TCOLV/tcolv-07.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`
+
+<GridTwo>
+
+<ImageContainer classes="large" fluid={props.data.tcolv1.childImageSharp.fluid} />
+
+<p class="small space-me right blog-text">The journey starts once a guest has booked a stay. The three email offer exclusive deals and upgrades as well as information on membership sign up. As the guest gets closer to their check-in date, event suggestions are sent, previous visitors will be sent suggestions based on their preferences.</p>
+
+<ImageContainer classes="small right" fluid={props.data.tcolv2.childImageSharp.fluid} />
+
+<ImageContainer classes="small" fluid={props.data.tcolv3.childImageSharp.fluid} />
+
+<ImageContainer classes="small" fluid={props.data.tcolv4.childImageSharp.fluid} />
+
+<ImageContainer classes="large" fluid={props.data.tcolv5.childImageSharp.fluid} />
+
+<p class="small space-me right blog-text">Once the guest checks in, the hotel is able to track the guests preferences through their spend on the property. Emails during their stay are then customized to help maximize their experience.</p>
+
+<ImageContainer classes="small" fluid={props.data.tcolv6.childImageSharp.fluid} />
+
+<ImageContainer classes="small" fluid={props.data.tcolv7.childImageSharp.fluid} />
+
+<p class="small right blog-text">Please contact me if you'd like to learn more about this project.</p>
+
+</GridTwo>
