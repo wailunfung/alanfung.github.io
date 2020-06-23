@@ -20,6 +20,7 @@ const AboutPage = (props) => {
             <p>Hello! I'm Alan, a designer based in San Francisco. My capabilities include art direction, design systems, UX research, motion design and front end development.</p>
             <p>I'm passionate about integrating technology with real world applications to better enrich and serve our lives.</p>
             <p>When I'm not designing, I'm ripping down mountains on my snowboard, making a mess in the kitchen and taking photos with my camera.</p>
+            <p>Currently working at Rodan + Fields as a Senior UX Designer, creating experiences for e-commerce and platform.</p>
           </div>
           <Img fluid={props.data.about4.childImageSharp.fluid} className="small left" alt="Steph Curry Photobomb" />
           <Img fluid={props.data.about2.childImageSharp.fluid} className="small" alt="Snowboarding Selfie" />

@@ -81,7 +81,8 @@ const IndexPage = (props) => {
             <h4 className={indexStyles.darkHeader}>Current Projects</h4>
             <div className={indexStyles.bar} />
             <ul>
-              <li>Currently available for freelance work.</li>
+              <li>Senior UX Designer @ Rodan + Fields</li>
+              <li>Song Arrangement for Ruin</li>
             </ul>
           </div>
 
