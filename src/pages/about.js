@@ -22,8 +22,7 @@ const AboutPage = (props) => {
             <p>When I'm not designing, I'm ripping down mountains on my snowboard, making a mess in the kitchen and taking photos with my camera.</p>
             <p>Currently working at Rodan + Fields as a Senior UX Designer, creating experiences for e-commerce and platform.</p>
           </div>
-          <Img fluid={props.data.about4.childImageSharp.fluid} className="small left" alt="Steph Curry Photobomb" />
-          <Img fluid={props.data.about2.childImageSharp.fluid} className="small" alt="Snowboarding Selfie" />
+          <Img fluid={props.data.about2.childImageSharp.fluid} className="small left" alt="Snowboarding Selfie" />
           <Img fluid={props.data.about1.childImageSharp.fluid} className="small right" alt="Color Factory Design Team Bonding" />
           <Img fluid={props.data.about3.childImageSharp.fluid} className="small right" alt="Sony Birthday Initiation" />
         </GridTwo>
@@ -51,13 +50,6 @@ export const query = graphql`
       }
     }
     about3: file(relativePath: { eq: "about3.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 1600, quality: 100) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    about4: file(relativePath: { eq: "about4.png" }) {
       childImageSharp {
         fluid(maxWidth: 1600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
